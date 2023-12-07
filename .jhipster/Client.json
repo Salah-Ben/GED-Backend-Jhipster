@@ -1,0 +1,55 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190831",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Client",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "id": false,
+      "otherEntityField": "id",
+      "otherEntityName": "clientPhysique",
+      "otherEntityRelationshipName": "client",
+      "ownerSide": true,
+      "relationshipName": "clientPhysique",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "id": false,
+      "otherEntityField": "id",
+      "otherEntityName": "clientMoral",
+      "otherEntityRelationshipName": "client",
+      "ownerSide": true,
+      "relationshipName": "clientMoral",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "groupClientMoral",
+      "relationshipName": "groupClientMoral",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "groupClientPhysique",
+      "relationshipName": "groupClientPhysique",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

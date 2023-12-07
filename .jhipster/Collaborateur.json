@@ -1,0 +1,63 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190832",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "collaborateur",
+  "fields": [
+    {
+      "fieldName": "collaborateurID",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenomCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cinCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresseCollaborateur",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "villeCollaborateur",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Collaborateur",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "entreprise",
+      "relationshipName": "entreprise",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "dossier",
+      "otherEntityRelationshipName": "collaborateur",
+      "ownerSide": true,
+      "relationshipName": "dossier",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

@@ -1,0 +1,54 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190833",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "dossier",
+  "fields": [
+    {
+      "fieldName": "dossierID",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "titreDossier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeDossier",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "typeService",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emplacementDossierPhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "qrCodeDossier",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Dossier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "client",
+      "relationshipName": "client",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "collaborateur",
+      "otherEntityRelationshipName": "dossier",
+      "ownerSide": false,
+      "relationshipName": "collaborateur",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

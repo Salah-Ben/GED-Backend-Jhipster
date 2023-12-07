@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190839",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "group_client_physique",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomGroupePhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lienGroupePhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombrePersonnePhysique",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "GroupClientPhysique",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

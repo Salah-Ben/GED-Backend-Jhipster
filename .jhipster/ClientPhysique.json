@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190837",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client_physique",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomClientPhysisque",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prenomClientPhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "cinClientPhysisque",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailClientPhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneClientPhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresseClientPhysique",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "villeClientPhysique",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientPhysique",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

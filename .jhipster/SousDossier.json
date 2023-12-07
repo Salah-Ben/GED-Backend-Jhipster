@@ -1,0 +1,31 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190834",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "sous_dossier",
+  "fields": [
+    {
+      "fieldName": "qrcode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "titre",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SousDossier",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "dossier",
+      "relationshipName": "dossier",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

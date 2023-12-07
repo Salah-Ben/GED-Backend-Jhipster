@@ -1,0 +1,48 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190836",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "client_moral",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroIdentificationClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresseClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "villeClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activiteClientMoral",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "ClientMoral",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}

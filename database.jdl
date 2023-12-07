@@ -1,0 +1,74 @@
+entity Entreprise {
+    enterpriseID Long
+    nomCabinet String
+    numeroIdentificationCabinet String
+    emailCabinet String
+    adresseCabinet String
+    telephoneCabinet String
+    villeCabinet String
+    activiteCabinet String
+}
+
+entity Client {
+    id Long
+    // Other client attributes
+    // ...
+}
+
+entity Collaborateur {
+    collaborateurID Long
+    // Other collaborateur attributes
+    // ...
+}
+
+entity Dossier {
+    dossierID Long
+    // Other dossier attributes
+    // ...
+
+}
+
+entity SousDossier {
+    idSousDossier Long
+    qrcode String
+    titre String
+}
+
+entity Documents {
+    idDocument Long
+    codeQRDocument String
+    titreDocument String
+
+}
+
+entity ClientMoral {
+    id Long
+    // Other client moral attributes
+    // ...
+
+}
+
+entity ClientPhysique {
+    id Long
+    // Other client physique attributes
+    // ...
+
+}
+
+entity GroupClientMoral {
+    id Long
+    // Other group client moral attributes
+    // ...
+}
+
+entity GroupClientPhysique {
+    id Long
+    // Other group client physique attributes
+    // ...
+
+}
+
+// Define relationships
+
+
+

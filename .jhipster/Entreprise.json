@@ -1,0 +1,57 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190830",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "entreprise",
+  "fields": [
+    {
+      "fieldName": "enterpriseID",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroIdentificationCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "emailCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "adresseCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "telephoneCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "villeCabinet",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "activiteCabinet",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Entreprise",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "client",
+      "otherEntityRelationshipName": "entreprise",
+      "ownerSide": true,
+      "relationshipName": "client",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

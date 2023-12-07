@@ -1,0 +1,35 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190835",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "documents",
+  "fields": [
+    {
+      "fieldName": "idDocument",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "codeQRDocument",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "titreDocument",
+      "fieldType": "String"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Documents",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "id",
+      "otherEntityName": "sousDossier",
+      "relationshipName": "sousDossier",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "no"
+}

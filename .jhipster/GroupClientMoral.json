@@ -1,0 +1,32 @@
+{
+  "applications": "*",
+  "changelogDate": "20231129190838",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "group_client_moral",
+  "fields": [
+    {
+      "fieldName": "id",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "nomGroupeClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lienGroupeClientMoral",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreClientMoral",
+      "fieldType": "Integer"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "GroupClientMoral",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [],
+  "service": "no"
+}
