@@ -1,20 +1,16 @@
-# Stage 1: Build the application
-FROM maven:3.9.4-eclipse-temurin-17-alpine AS build
-WORKDIR /app
-COPY . .
-RUN mvn clean package
-
-# Stage 2: Create a minimal runtime image
-FROM eclipse-temurin:17-jdk-alpine
-
-# Set a label for your image (optional but recommended)
-LABEL maintainer="your-email@example.com"
-LABEL app="demo-app"
+FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
-# Copy the JAR file from the previous stage (build stage)
-COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar demo.jar
+COPY . /app
 
-EXPOSE 8089
-CMD ["java", "-jar", "demo.jar"]
+EXPOSE 8080
+
+ENV _JAVA_OPTIONS="-Xmx512m -Xms256m"
+ENV SPRING_PROFILES_ACTIVE="dev,api-docs"
+ENV MANAGEMENT_METRICS_EXPORT_PROMETHEUS_ENABLED="true"
+ENV SPRING_DATASOURCE_URL="jdbc:mysql://mysql-ff62e13-benarbia-f7b5.a.aivencloud.com:27703/defaultdb?sslMode=REQUIRED&user=avnadmin&password=AVNS_TN3z3VQwSsAYqL1my_o"
+ENV SPRING_LIQUIBASE_URL="jdbc:mysql://mysql-ff62e13-benarbia-f7b5.a.aivencloud.com:27703/defaultdb?sslMode=REQUIRED&user=avnadmin&password=AVNS_TN3z3VQwSsAYqL1my_o"
+ENV JHIPSTER_SLEEP="30"
+
+CMD ["java", "-jar", "icbged.jar"]
