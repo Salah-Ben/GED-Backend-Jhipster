@@ -12,4 +12,4 @@ WORKDIR /app
 COPY --from=build /app/target/demo-0.0.1-SNAPSHOT.jar demo.jar
 # Run the application
 EXPOSE 8089
-CMD ["java", "-jar", "icbged.jar"]
+CMD ["java", "-jar", "demo.jar"]
