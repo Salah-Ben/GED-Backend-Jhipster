@@ -35,9 +35,9 @@ spring:
       indent-output: true
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://avnadmin:AVNS_TN3z3VQwSsAYqL1my_o@mysql-ff62e13-benarbia-f7b5.a.aivencloud.com:27703/ibcged?ssl-mode=REQUIRED
-    username: avnadmin
-    password: AVNS_TN3z3VQwSsAYqL1my_o
+    url: jdbc:mysql://
+    username: 
+    password: 
     hikari:
       poolName: Hikari
       auto-commit: false
